@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet-WebApp-d3a96d47-792e-489f-8c8d-d4ff309b4e35",
 
   "dependencies": {
@@ -42,7 +42,8 @@
     "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
       "version": "1.0.0-preview2-final",
       "type": "build"
-    }
+    },
+    "Core": "1.0.0-*"
   },
 
   "tools": {
