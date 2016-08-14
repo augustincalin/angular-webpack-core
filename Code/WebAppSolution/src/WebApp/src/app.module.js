@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_ts_1 = require('./app/app.component.ts');
+//import {MaterialModule} from '@angular2-material';
 var AppModule = (function () {
     function AppModule() {
     }

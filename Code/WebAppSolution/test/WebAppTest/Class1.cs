@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Core.Interfaces.Services;
+using Core.Model;
+using Moq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,9 +22,11 @@ namespace WebAppTest
         [Fact]
         public void TestController()
         {
-            ValueController controller = new ValueController();
+            Mock<IStudentService> studentServiceMock = new Mock<IStudentService>();
+            studentServiceMock.Setup(x => x.GetStudentById(It.IsAny<int>())).Returns(new Student { Id = 123, Name = "John" });
+            StudentController controller = new StudentController(studentServiceMock.Object);
             string result = controller.Index();
-            string expected = "123";
+            string expected = "John";
             Assert.Equal(result, expected);
         }
 

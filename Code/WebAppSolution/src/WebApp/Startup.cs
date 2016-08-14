@@ -12,6 +12,8 @@ using Microsoft.Extensions.Logging;
 using WebApp.Data;
 using WebApp.Models;
 using WebApp.Services;
+using Core.Services;
+using Core.Interfaces.Services;
 
 namespace WebApp
 {
@@ -50,6 +52,7 @@ namespace WebApp
             services.AddMvc();
 
             // Add application services.
+            services.AddSingleton<IStudentService, StudentService>();
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
         }
