@@ -1,5 +1,5 @@
 # angular-webpack-core
-###Contains
+###Contains (or will contain)
 Seed project for:
 - angular 2
 - webpack
