@@ -1,11 +1,11 @@
 ﻿import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app/app.component.ts';
-//import {MaterialModule} from '@angular2-material';
+import {MdButtonModule} from '@angular2-material/button/button';
 
 @NgModule(
     {
-        imports: [BrowserModule],
+        imports: [MdButtonModule, BrowserModule],
         declarations:[AppComponent],
         bootstrap:[AppComponent]
     }
