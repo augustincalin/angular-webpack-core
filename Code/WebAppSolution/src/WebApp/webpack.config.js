@@ -15,10 +15,12 @@ module.exports = {
             }
         ]
     },
-    resolve:['', '.js', '.ts'],
-    plugins:[
+    resolve: {
+        extensions: ['', '.js', '.ts']
+    },
+    plugins: [
         new htmlWebpackPlugin({
-            template:'./src/index.html'
+            template: './src/index.html'
         })
     ]
 };
